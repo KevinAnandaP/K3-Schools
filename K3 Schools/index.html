@@ -1,0 +1,222 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>K3Schools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/489e723f53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png" style="width: 60px;"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>                                  
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Learn With K3Schools</h1>
+    <p>K3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+        <br>Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+    </p>
+    <a href="course.html" class="hero-btn">Let's Go</a>
+</div>
+
+</section>
+
+<!---- Course ---->
+
+<section class="course">
+    <h1>Most Popular</h1>
+    <p>Top 3 Web Programming Language for Front-End Developer. </p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>HTML</h3>
+            <p>The language for building web pages. HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+        </div>
+        <div class="course-col">
+            <h3>CSS</h3>
+            <p>The language for styling web pages. What is CSS explain in detail?
+                Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        </div> 
+        <div class="course-col">
+            <h3>JavaScript</h3>
+            <p>The language for programming. JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>
+        </div> 
+    </div>
+
+
+</section>
+
+<!---- Campus ---->
+
+<section class="campus">
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/html-logo.png">
+            <div class="layer">
+                <h3 onclick="htmlAbout()">HTML</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/css-logo.png">
+            <div class="layer">
+                <h3 onclick="cssAbout()">CSS</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/java-script.png">
+            <div class="layer">
+                <h3 onclick="jsAbout()">JavaScript</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="campus">
+    <h1>Other Programming Languages</h1>
+    <p>Some programming language you might get interest.</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/c-plus-plus.png">
+            <div class="layer">
+                <h3 onclick="cplusAbout()">C++</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/kotlin.png">
+            <div class="layer">
+                <h3 onclick="kotlinAbout()">Kotlin</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/c-sharp.png">
+            <div class="layer">
+                <h3 onclick="csharpAbout()">C#</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------ Facilities ------>
+
+<section class="facilities">
+    <h1>Facilities</h1>
+    <p>Our Facilities.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/virtual-learning.jpg">
+            <h3>Virtual Learning</h3>
+            <p>What do mean by virtual learning?
+                Virtual learning is designed to extend educational experiences. It does not try to replicate them. In virtual learning environments, students access resources and interact in ways they would not or could not in the physical classroom. Many educators use virtual learning and have been for a while.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/consultation.jpg">
+            <h3>Consultation</h3>
+            <p>Consultation is an active process in which organisation management opens formal and informal communication channels between the organisation and its stakeholders.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/quiz.png">
+            <h3>Quiz</h3>
+            <p>A quiz is a quick and informal assessment of student knowledge. Quizzes are often used in North American higher education environments to briefly test a students' level of comprehension regarding course material, providing teachers with insights into student progress and any existing knowledge gaps.
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+<!---- testimonials ---->
+
+<section class="testimonials">
+    <h1>Comments From Our Users</h1>
+    <p>Comments from K3Schools users.</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/kratos.jpg">
+            <div>
+                <p>Saya suka website ini, anak saya Atreus jadi suka ngoding, dan sekarang Atreus
+                    membuat Olympus dan Ragnarok lewat HTML
+                </p>
+                <h3>Kratos Ananda Mimir</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/Algifari.png">
+            <div>
+                <p>Hmmm platform yang menarik, platform elit hati gwe ingin nyatir.</p>
+                <h3>Aufa Salsabila Algifari</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!----- Call To Action ----->
+
+<section class="cta">
+    <h1>Need Help?</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a> 
+</section>
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>K3Schools is a online learning website for programming, we got inspired by W3Schools.</p>
+        <div class="icons">
+            <i class="fa fa-facebook" onclick=""></i>
+            <i class="fa fa-twitter" onclick=""></i>
+            <i class="fa fa-instagram" onclick="igKepin()"></i>
+            <i class="fa fa-linkedin" onclick=""></i>
+            <i class="fa fa-youtube-play" onclick=""></i>
+        </div>
+        <p><i class="fa fa-copyright"></i> <strong>Copyright Mas Kevin</strong> | Tutorial by Easy Tutorials on YT </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--------JavaScript for Toggle Menu--------->
+
+<script src="main.js"></script>
+
+
+</body>
+</html>  

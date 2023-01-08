@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/489e723f53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header-course">
+        <nav>
+            <a href="../index.html"><img src="../images/logo.png" style="width: 60px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../course.html">COURSE</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>C++</h1>
+    </section>
+
+    <section class="course-s">
+        <img src="../images/html-course.png">
+        <br>
+        <h2>Navigation</h2>
+        <nav>
+            <ul>
+                <li><a href="#Basic">HTML Basic</a></li>
+                <li><a href="#Elements">HTML Elements</a></li>
+                <li><a href="#Attributes">HTML Attributes</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <div class="image-ex">
+            <h1 id="Basic">A. HTML Basic</h1>
+            <p>In this chapter we will show some basic HTML examples.
+    
+            Don't worry if we use tags you have not learned about yet.
+            
+            </p>
+            <br>
+            <h1>Documents</h1>
+            <p>An HTML document is a file containing hypertext markup language. HTML code is based on tags, or hidden keywords, which provide instructions for formatting the document. A tag starts with an angle bracket and the 'less than' sign: '<'. The tag ends with an angle bracket and the 'greater than' sign '>'. Tags tell the processing program, often the web browser, what to do with the text. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmldocument.png" alt=""></p>
+            <br>
+            <h1>The < !DOCTYPE > Declaration</h1>
+            <p>The HTML document type declaration, also known as DOCTYPE, is the first line of code required in every HTML or XHTML document. The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. This ensures that the web page is parsed the same way by different web browsers.</p>
+            <br>
+            <h1>Headings</h1>
+            <p>What are HTML headings?
+                HTML defines six levels of headings. A heading element implies all the font changes, paragraph breaks before and after, and any white space necessary to render the heading. The heading elements are H1, H2, H3, H4, H5, and H6 with H1 being the highest (or most important) level and H6 the least. <br>
+            <br> Example : <br> 
+            <img src="../images/examples/htmlheadings.png" alt=""></p>
+            <br>
+            <h1>Paragraphs</h1>
+            <p>In this article, we will know the HTML Paragraph, & its basic implementation through the examples. The < p > tag in HTML defines a paragraph. These have both opening and closing tags. So anything mentioned within < p > and < /p > is treated as a paragraph. Most browsers read a line as a paragraph even if we don't use the closing tag i.e, < /p >, but this may raise unexpected results. So, it is both a good convention, and we must use the closing tag. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlparagraphs.png" alt=""><br>
+            </p>
+            <br>
+            <h1>Links</h1>
+            <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand. Note: A link does not have to be text. A link can be an image or any other HTML element! <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmllinks.png" alt="" width="60%"></p>
+            <br>
+            <h1>Images</h1>
+            <p>The HTML < img > tag is used to embed an image in a web page. Images are not technically inserted into a web page; images are linked to web pages. The < img > tag creates a holding space for the referenced image. The < img > tag is empty, it contains attributes only, and does not have a closing tag. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlimages.png" alt="" width=""></p>
+            <br>
+            <h1 id="Elements">B. HTML Elements</h1>
+            <p>An HTML element is a type of HTML (HyperText Markup Language) document component, one of several types of HTML nodes (there are also text nodes, comment nodes and others).[vague] The first used version of HTML was written by Tim Berners-Lee in 1993 and there have since been many versions of HTML. The most commonly used version is HTML 4.01, which became official standard in December 1999.[1] An HTML document is composed of a tree of simple HTML nodes, such as text nodes, and HTML elements, which add semantics and formatting to parts of document (e.g., make text bold, organize it into paragraphs, lists and tables, or embed hyperlinks and images). Each element can have HTML attributes specified. Elements can also have content, including other elements and text. </p>
+            <br>
+            <h1>Nested Elements</h1>
+            <p>Nested elements are children of their parent container. This promotes inheritence where the parent element can give its properties (some) to its children so they don't have to be assigned those properties directly.
+    
+                Some elements do not permit nesting of other elements unless they are inline elements. For instance we cannot nest another paragraph inside a paragraph like we can a division within a division. Likewise we cannot nest a list item within another list item. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmldocument.png" alt=""> <br>
+            <br> Example Explanation =>
+            The < html > element is the root element and it defines the whole HTML document. It has a start tag < html > and an end tag < /html >. Then, inside the < html > element there is a < body > element : <br>
+            <img src="../images/examples/htmlexplained1.png" alt=""> <br>
+            The < body > element defines the document's body. It has a start tag < body > and an end tag < /body >. Then, inside the < body > element there are two other elements -> < h1 > and < p > : <br>
+            <img src="../images/examples/htmlexplained2.png" alt=""> <br>
+            The < h1 > element defines a heading. It has a start tag < h1 > and an end tag < /h1 > : <br>
+            <img src="../images/examples/htmlexplained3.png" alt=""> <br>
+            The < p > element defines a paragraph
+            <br>
+            </p>
+            <h1 id="Attributes">C. HTML Attributes</h1>
+            <p>- All HTML elements can have attributes<br>
+                - Attributes provide additional information about elements<br>
+                - Attributes are always specified in the start tag<br>
+                - Attributes usually come in name/value pairs like: name="value"</p>
+            <br>
+            <h1>The href Attribute</h1>
+            <p>The HTML < a > href Attribute is used to specify the URL of the page that the link goes to. When the href attribute is not present in the <a> an element that it will not be a hyperlink. 
+                This attribute is used to specify a link to any address. This attribute is used along with < a > tag. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmllinks.png" alt=""> </p>
+            <br>
+            <h1>The src Attribute</h1>
+            <p>The HTML < input > src Attribute is used to specify the URL of the image to be used as a submit button. This attribute can only be used with < input type=”image” >
+                . There are two ways to specify the URL in the src attribute:
+    
+                1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+                
+                Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+                
+                2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+            <br>
+            <h1>The width and height Attribute</h1>
+            <p>The height and width attribute in HTML is used to specify the height and width of the element. The values are set in px i.e. pixels. To add an image in an HTML page, < img > tag is used. With that, we need to use the attributes height and width to set the height and width of the image in pixels.</p>
+            <br>
+            <h1>The alt Attribute</h1>
+            <p>Alt attributes provide visually impaired visitors with an alternative to images. This allows visitors to use programs that read text out loud to understand what images add to content.
+    
+                For instance, visually impaired people are at a disadvantage when browsing a website that use images for navigation, since they don't have a way of knowing the main categories of the website. But, if images have alt attributes, there is a way to figure out the purpose of these images.</p>
+            <br>
+            <h1>The style Attribute</h1>
+            <p>What are styles attributes?
+                The style attribute specifies an inline style for an element. The style attribute will override any style set globally, e.g. styles specified. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlstyle.png" alt=""></p>
+            <br>
+            <h1>The lang Attribute</h1>
+            <p>The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, and it is also used by screen readers that switch language profiles to provide the correct accent and pronunciation. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlLang.png" alt=""></p>
+            <br>
+            <h1>The title Attribute</h1>
+            <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. The title attribute can be used on any HTML element (it will validate on any HTML element. However, it is not necessarily useful). <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlTitle.png" alt=""></p>
+            <div class="row-s">
+                <a href="../course.html" class="hero-btn-k">Back to Courses</a>
+                <a href="../index.html" class="hero-btn-k">Home</a>
+                <a href="#HTML" class="hero-btn-k">Go Top</a>
+                <a href="cplus.html" class=" hero-btn-k">Next Courses</a>
+            </div>
+    
+    </section>
+    <br>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>K3Schools is a online learning website for programming, we get inspired by W3Schools.</p>
+            <div class="icons">
+                <i class="fa fa-facebook" onclick=""></i>
+                <i class="fa fa-twitter" onclick=""></i>
+                <i class="fa fa-instagram" onclick="igKepin()"></i>
+                <i class="fa fa-linkedin" onclick=""></i>
+                <i class="fa fa-youtube-play" onclick=""></i>
+            </div>
+            <p><i class="fa fa-copyright"></i> <strong>Copyright Mas Kevin</strong> | Tutorial by Easy Tutorials on YT </p>
+    </section>
+    
+    <script src="../main.js"></script>
+    
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/489e723f53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header-course">
+        <nav>
+            <a href="../index.html"><img src="../images/logo.png" style="width: 60px;" id="TOP"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../course.html">COURSE</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CSS</h1>
+    </section>
+
+    <section class="course-s">
+        <img src="../images/css-course">
+        <br>
+        <h2>Navigation</h2>
+        <nav>
+            <ul>
+                <li><a href="#Syntax">CSS Syntax</a></li>
+                <li><a href="#Selectors">CSS Selectors</a></li>
+                <li><a href="#HowTo">CSS How To</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <div class="image-ex">
+            <h1 id="Syntax">A. CSS Syntax</h1>
+            <p>The selector points to the HTML element you want to style.
+
+                The declaration block contains one or more declarations separated by semicolons.
+                
+                Each declaration includes a CSS property name and a value, separated by a colon.
+                
+                Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. <br>
+                <br> Example : <br>
+                <img src="../images/examples/cssSyntax.png" alt=""> <br>
+                <br> Example Explanation => <br> <br>
+                - p is a selector in CSS (it points to the HTML element you want to style: < p >). <br>
+                - color is a property, and red is the property value <br>
+                - text-align is a property, and center is the property value
+            </p>
+            <br>
+            <h1 id="Selectors">B. CSS Selectors</h1>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+                We can divide CSS selectors into five categories: <br> <br>
+                
+                - Simple selectors (select elements based on name, id, class) <br>
+                - Combinator selectors (select elements based on a specific relationship between them) <br>
+                - Pseudo-class selectors (select elements based on a certain state) <br>
+                - Pseudo-elements selectors (select and style a part of an element) <br>
+                - Attribute selectors (select elements based on an attribute or attribute value) <br>
+                This page will explain the most basic CSS selectors.
+                
+                </p>
+            <br>
+            <h1>The CSS element Selector</h1>
+            <p>The element selector selects HTML elements based on the element name.<br>
+            <br> Example : <br>
+            <br> Here, all < p > elements on the page will be center-aligned, with a red text color: <br>
+            <br> <img src="../images/examples/cssSyntax.png" alt="">
+            </p>
+            <h1>The CSS id Selector</h1>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element.
+
+                The id of an element is unique within a page, so the id selector is used to select one unique element!
+                
+                To select an element with a specific id, write a hash (#) character, followed by the id of the element. <br>
+            <br> Example : <br>
+            <br> The CSS rule below will be applied to the HTML element with id="para1": <br>
+            <br> <img src="../images/examples/cssIdSelector.png" alt="">
+            </p>
+            <h1>The CSS class Selector</h1>
+            <p>The class selector selects HTML elements with a specific class attribute.
+
+                To select elements with a specific class, write a period (.) character, followed by the class name. <br>
+            <br> Example : <br>
+            <br> In this example all HTML elements with class="center" will be red and center-aligned:  <br>
+            <br> <img src="../images/examples/cssSyntax.png" alt="">
+            </p>
+            <h1>The CSS Element Selector</h1>
+            <p>The element selector selects HTML elements based on the element name.<br>
+            <br> Example : <br>
+            <br> Here, all < p > elements on the page will be center-aligned, with a red text color: <br>
+            <br> <img src="../images/examples/cssSyntax.png" alt="">
+            </p>
+            <h1>The CSS Element Selector</h1>
+            <p>The element selector selects HTML elements based on the element name.<br>
+            <br> Example : <br>
+            <br> Here, all < p > elements on the page will be center-aligned, with a red text color: <br>
+            <br> <img src="../images/examples/cssSyntax.png" alt="">
+            </p>
+            <h1 id="HowTo">C. CSS How To</h1>
+            <p>- All HTML elements can have attributes<br>
+                - Attributes provide additional information about elements<br>
+                - Attributes are always specified in the start tag<br>
+                - Attributes usually come in name/value pairs like: name="value"</p>
+            <br>
+            <h1>The href Attribute</h1>
+            <p>The HTML < a > href Attribute is used to specify the URL of the page that the link goes to. When the href attribute is not present in the <a> an element that it will not be a hyperlink. 
+                This attribute is used to specify a link to any address. This attribute is used along with < a > tag. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmllinks.png" alt=""> </p>
+            <br>
+            <h1>The src Attribute</h1>
+            <p>The HTML < input > src Attribute is used to specify the URL of the image to be used as a submit button. This attribute can only be used with < input type=”image” >
+                . There are two ways to specify the URL in the src attribute:
+    
+                1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+                
+                Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+                
+                2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+            <br>
+            <h1>The width and height Attribute</h1>
+            <p>The height and width attribute in HTML is used to specify the height and width of the element. The values are set in px i.e. pixels. To add an image in an HTML page, < img > tag is used. With that, we need to use the attributes height and width to set the height and width of the image in pixels.</p>
+            <br>
+            <h1>The alt Attribute</h1>
+            <p>Alt attributes provide visually impaired visitors with an alternative to images. This allows visitors to use programs that read text out loud to understand what images add to content.
+    
+                For instance, visually impaired people are at a disadvantage when browsing a website that use images for navigation, since they don't have a way of knowing the main categories of the website. But, if images have alt attributes, there is a way to figure out the purpose of these images.</p>
+            <br>
+            <h1>The style Attribute</h1>
+            <p>What are styles attributes?
+                The style attribute specifies an inline style for an element. The style attribute will override any style set globally, e.g. styles specified. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlstyle.png" alt=""></p>
+            <br>
+            <h1>The lang Attribute</h1>
+            <p>The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, and it is also used by screen readers that switch language profiles to provide the correct accent and pronunciation. <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlLang.png" alt=""></p>
+            <br>
+            <h1>The title Attribute</h1>
+            <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. The title attribute can be used on any HTML element (it will validate on any HTML element. However, it is not necessarily useful). <br>
+            <br> Example : <br>
+            <img src="../images/examples/htmlTitle.png" alt=""></p>
+            <div class="row-s">
+                <a href="../course.html" class="hero-btn-k">Back to Courses</a>
+                <a href="../index.html" class="hero-btn-k">Home</a>
+                <a href="#TOP" class="hero-btn-k">Go Top</a>
+                <a href="cplus.html" class=" hero-btn-k">Next Courses</a>
+            </div>
+    
+    </section>
+    <br>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>K3Schools is a online learning website for programming, we get inspired by W3Schools.</p>
+            <div class="icons">
+                <i class="fa fa-facebook" onclick=""></i>
+                <i class="fa fa-twitter" onclick=""></i>
+                <i class="fa fa-instagram" onclick="igKepin()"></i>
+                <i class="fa fa-linkedin" onclick=""></i>
+                <i class="fa fa-youtube-play" onclick=""></i>
+            </div>
+            <p><i class="fa fa-copyright"></i> <strong>Copyright Mas Kevin</strong> | Tutorial by Easy Tutorials on YT </p>
+    </section>
+    
+    <script src="../main.js"></script>
+</body>
+</html>
